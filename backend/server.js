@@ -5,8 +5,9 @@ const dotenv = require('dotenv');
 const path = require('path');
 
 dotenv.config();
-
+console.log('MongoDB URI =', process.env.MONGO_URI);
 const app = express();
+console.log('JWT Secret =', process.env.JWT_SECRET);
 
 // Middleware
 app.use(cors({
