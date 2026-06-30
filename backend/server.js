@@ -33,7 +33,7 @@ app.get('/api/health', (req, res) => {
 });
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('✅ MongoDB Connected');
     app.listen(process.env.PORT || 5000, () => {
