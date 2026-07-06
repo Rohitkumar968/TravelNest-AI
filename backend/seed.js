@@ -490,8 +490,13 @@ const seedDB = async () => {
   console.log(`Created ${users.length + 1} users`);
 
   // Create tours
-  const createdTours = await Tour.create(tours);
-  console.log(`Created ${createdTours.length} tours`);
+  // const createdTours = await Tour.create(tours);
+  // console.log(`Created ${createdTours.length} tours`);
+  const createdTours = await Tour.insertMany(tours);
+console.log("Inserted:", createdTours.length);
+
+const total = await Tour.countDocuments();
+console.log("Total Tours in DB:", total);
 
   // Create sample bookings
   const bookings = [
