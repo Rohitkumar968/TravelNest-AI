@@ -291,6 +291,144 @@ const tours = [
     rating: 5.0,
     numReviews: 31
   }
+  {
+  title: "Goa Beach Escape",
+  location: "Goa",
+  country: "India",
+  price: 8999,
+  duration: 4,
+  description: "Experience the beautiful beaches, nightlife and water sports of Goa.",
+  images: [
+    "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2"
+  ],
+  highlights: ["Baga Beach", "Calangute", "Water Sports", "Nightlife"],
+  itinerary: [
+    { day: 1, title: "Arrival", description: "Check-in and relax." },
+    { day: 2, title: "Beach Tour", description: "Visit famous beaches." },
+    { day: 3, title: "Adventure", description: "Water sports and shopping." },
+    { day: 4, title: "Departure", description: "Checkout and return." }
+  ],
+  included: ["Hotel", "Breakfast", "Sightseeing"],
+  excluded: ["Flights", "Personal Expenses"],
+  maxGroupSize: 20,
+  difficulty: "easy",
+  category: "beach",
+  featured: true,
+  rating: 4.8,
+  numReviews: 210
+},
+
+{
+  title: "Manali Adventure",
+  location: "Manali",
+  country: "India",
+  price: 12999,
+  duration: 5,
+  description: "Snow adventure, Solang Valley and mountain views.",
+  images: [
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23"
+  ],
+  highlights: ["Solang Valley", "Rohtang Pass", "River Rafting"],
+  itinerary: [
+    { day: 1, title: "Arrival", description: "Hotel check-in." },
+    { day: 2, title: "Solang Valley", description: "Adventure activities." },
+    { day: 3, title: "Rohtang Pass", description: "Snow sightseeing." },
+    { day: 4, title: "Local Tour", description: "Temples and markets." },
+    { day: 5, title: "Departure", description: "Return journey." }
+  ],
+  included: ["Hotel", "Breakfast", "Transport"],
+  excluded: ["Lunch", "Shopping"],
+  maxGroupSize: 15,
+  difficulty: "moderate",
+  category: "mountain",
+  featured: true,
+  rating: 4.9,
+  numReviews: 175
+},
+
+{
+  title: "Jaipur Heritage Tour",
+  location: "Jaipur",
+  country: "India",
+  price: 6999,
+  duration: 3,
+  description: "Explore forts, palaces and Rajasthan culture.",
+  images: [
+    "https://images.unsplash.com/photo-1477587458883-47145ed94245"
+  ],
+  highlights: ["Amber Fort", "Hawa Mahal", "City Palace"],
+  itinerary: [
+    { day: 1, title: "Arrival", description: "Check-in and local market." },
+    { day: 2, title: "Heritage Tour", description: "Visit forts and palaces." },
+    { day: 3, title: "Shopping", description: "Local handicrafts and departure." }
+  ],
+  included: ["Hotel", "Breakfast"],
+  excluded: ["Flights"],
+  maxGroupSize: 20,
+  difficulty: "easy",
+  category: "cultural",
+  featured: false,
+  rating: 4.6,
+  numReviews: 120
+},
+
+{
+  title: "Kerala Backwaters",
+  location: "Alleppey",
+  country: "India",
+  price: 14999,
+  duration: 5,
+  description: "Enjoy luxury houseboat stay in Kerala backwaters.",
+  images: [
+    "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944"
+  ],
+  highlights: ["Houseboat", "Backwaters", "Village Tour"],
+  itinerary: [
+    { day: 1, title: "Arrival", description: "Hotel check-in." },
+    { day: 2, title: "Houseboat", description: "Backwater cruise." },
+    { day: 3, title: "Village Tour", description: "Explore local culture." },
+    { day: 4, title: "Beach Visit", description: "Relax by the beach." },
+    { day: 5, title: "Departure", description: "Return." }
+  ],
+  included: ["Hotel", "Breakfast", "Houseboat"],
+  excluded: ["Flights"],
+  maxGroupSize: 18,
+  difficulty: "easy",
+  category: "beach",
+  featured: true,
+  rating: 4.9,
+  numReviews: 198
+},
+
+{
+  title: "Ladakh Bike Expedition",
+  location: "Leh",
+  country: "India",
+  price: 24999,
+  duration: 7,
+  description: "Ride through the stunning Himalayan roads of Ladakh.",
+  images: [
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+  ],
+  highlights: ["Khardung La", "Pangong Lake", "Nubra Valley"],
+  itinerary: [
+    { day: 1, title: "Arrival", description: "Acclimatization." },
+    { day: 2, title: "Leh Tour", description: "Local sightseeing." },
+    { day: 3, title: "Nubra Valley", description: "Bike ride." },
+    { day: 4, title: "Pangong", description: "Lake visit." },
+    { day: 5, title: "Khardung La", description: "Mountain ride." },
+    { day: 6, title: "Leh", description: "Shopping." },
+    { day: 7, title: "Departure", description: "Return." }
+  ],
+  included: ["Hotel", "Bike", "Breakfast"],
+  excluded: ["Airfare", "Personal Expenses"],
+  maxGroupSize: 12,
+  difficulty: "challenging",
+  category: "adventure",
+  featured: true,
+  rating: 5,
+  numReviews: 265
+}
 ];
 
 const seedDB = async () => {
