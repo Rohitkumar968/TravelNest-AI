@@ -11,7 +11,11 @@ console.log('JWT Secret =', process.env.JWT_SECRET);
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://travel-nest-ai-five.vercel.app'
+  ],
   credentials: true
 }));
 app.use(express.json());
