@@ -261,6 +261,7 @@ const tours = [
     rating: 4.9,
     numReviews: 43
   },
+
   {
     title: 'Switzerland Alpine Wonder',
     location: 'Zurich, Interlaken & Zermatt',
@@ -320,35 +321,6 @@ const tours = [
 },
 
 
-{
-  title: "Ladakh Bike Expedition",
-  location: "Leh",
-  country: "India",
-  price: 24999,
-  duration: 7,
-  description: "Ride through the stunning Himalayan roads of Ladakh.",
-  images: [
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
-  ],
-  highlights: ["Khardung La", "Pangong Lake", "Nubra Valley"],
-  itinerary: [
-    { day: 1, title: "Arrival", description: "Acclimatization." },
-    { day: 2, title: "Leh Tour", description: "Local sightseeing." },
-    { day: 3, title: "Nubra Valley", description: "Bike ride." },
-    { day: 4, title: "Pangong", description: "Lake visit." },
-    { day: 5, title: "Khardung La", description: "Mountain ride." },
-    { day: 6, title: "Leh", description: "Shopping." },
-    { day: 7, title: "Departure", description: "Return." }
-  ],
-  included: ["Hotel", "Bike", "Breakfast"],
-  excluded: ["Airfare", "Personal Expenses"],
-  maxGroupSize: 12,
-  difficulty: "challenging",
-  category: "adventure",
-  featured: true,
-  rating: 5,
-  numReviews: 265
-},
 {
   title: "Kashmir Paradise",
   location: "Srinagar, Gulmarg & Pahalgam",
@@ -490,9 +462,7 @@ const seedDB = async () => {
   console.log(`Created ${users.length + 1} users`);
 
   // Create tours
-  // const createdTours = await Tour.create(tours);
-  // console.log(`Created ${createdTours.length} tours`);
-  const createdTours = await Tour.insertMany(tours);
+const createdTours = await Tour.insertMany(tours);
 console.log("Inserted:", createdTours.length);
 
 const total = await Tour.countDocuments();
