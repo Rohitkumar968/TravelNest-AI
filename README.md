@@ -1,200 +1,260 @@
-# ✈️ TravelNest AI — Full-Stack MERN Travel Platform
+# ✈️ TravelNest AI — AI Powered MERN Travel Platform
 
-A modern, AI-powered tour & travel website built with the MERN stack, Groq AI, and a stunning glassmorphism UI.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white)
+![Vercel](https://img.shields.io/badge/Frontend-Vercel-000000?logo=vercel)
+![Render](https://img.shields.io/badge/Backend-Render-46E3B7?logo=render)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
+A modern **AI-powered Travel Booking Web Application** built using the **MERN Stack**, **Groq AI**, and a responsive UI. Users can browse tours, book trips, manage wishlists, write reviews, and generate personalized travel itineraries using AI.
 
 ---
 
-## 🚀 Tech Stack
+# 🌐 Live Demo
+
+### 🚀 Frontend
+https://travel-nest-ai-five.vercel.app
+
+### ⚙️ Backend API
+https://travelnest-ai-backend-0z1j.onrender.com/api
+
+---
+
+# 🚀 Tech Stack
 
 | Layer | Technology |
-|---|---|
-| Frontend | React (Vite) + Tailwind CSS |
-| Backend | Node.js + Express.js |
-| Database | MongoDB + Mongoose |
-| Auth | JWT + bcrypt |
-| AI | Groq SDK (Llama 3) |
-| State | Zustand |
-| HTTP | Axios |
+|--------|------------|
+| Frontend | React.js (Vite), Tailwind CSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB Atlas, Mongoose |
+| Authentication | JWT + bcrypt |
+| AI | Groq AI (Llama 3) |
+| State Management | Zustand |
+| HTTP Client | Axios |
+| Deployment | Vercel + Render |
 
 ---
 
-## 📁 Project Structure
+# ✨ Features
 
-```
+## 👤 User
+
+- 🔐 Secure Signup/Login
+- 🌍 Browse Travel Destinations
+- 📄 Tour Details
+- ❤️ Wishlist
+- 📅 Tour Booking
+- ⭐ Reviews & Ratings
+- 👤 User Dashboard
+- 🤖 AI Trip Planner
+- 💬 AI Travel Chat
+- 🌙 Dark Mode
+- 📱 Fully Responsive
+
+---
+
+## 👨‍💼 Admin
+
+- 📊 Dashboard
+- ➕ Add Tours
+- ✏️ Edit Tours
+- ❌ Delete Tours
+- 👥 Manage Users
+- 📅 Manage Bookings
+- 📈 View Statistics
+
+---
+
+# 📂 Project Structure
+
+```text
 travelnest-ai/
+│
 ├── backend/
 │   ├── models/
-│   │   ├── User.js
-│   │   ├── Tour.js
-│   │   ├── Booking.js
-│   │   ├── Wishlist.js
-│   │   └── Review.js
 │   ├── routes/
-│   │   ├── auth.js
-│   │   ├── tours.js
-│   │   ├── bookings.js
-│   │   ├── wishlist.js
-│   │   ├── admin.js
-│   │   ├── reviews.js
-│   │   └── ai.js
 │   ├── middleware/
-│   │   └── auth.js
-│   ├── server.js
-│   ├── seed.js
+│   ├── uploads/
 │   ├── .env
-│   └── package.json
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── server.js
+│   └── seed.js
 │
-└── frontend/
-    ├── src/
-    │   ├── pages/
-    │   │   ├── Home.jsx
-    │   │   ├── Login.jsx
-    │   │   ├── Signup.jsx
-    │   │   ├── Tours.jsx
-    │   │   ├── TourDetail.jsx
-    │   │   ├── Dashboard.jsx
-    │   │   ├── AdminDashboard.jsx
-    │   │   ├── AIPlanner.jsx
-    │   │   └── Wishlist.jsx
-    │   ├── components/
-    │   │   ├── Navbar.jsx
-    │   │   ├── Footer.jsx
-    │   │   ├── TourCard.jsx
-    │   │   ├── Loader.jsx
-    │   │   └── ProtectedRoute.jsx
-    │   ├── store/
-    │   │   ├── authStore.js
-    │   │   ├── wishlistStore.js
-    │   │   └── themeStore.js
-    │   ├── utils/
-    │   │   └── api.js
-    │   ├── App.jsx
-    │   ├── main.jsx
-    │   └── index.css
-    ├── index.html
-    ├── vite.config.js
-    ├── tailwind.config.js
-    └── package.json
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── .env
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   └── index.html
+│
+├── screenshots/
+│   ├── home.png
+│   ├── login.png
+│   ├── signup.png
+│   ├── tours.png
+│   ├── booking.png
+│   ├── dashboard.png
+│   └── ai-planner.png
+│
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## ⚙️ Setup & Installation
+# ⚙️ Installation
 
-### 1. Prerequisites
-- Node.js v18+
-- MongoDB (local or Atlas)
-- Groq API Key (free at console.groq.com)
+## Clone Repository
 
-### 2. Backend Setup
+```bash
+git clone https://github.com/Rohitkumar968/travelnest-ai.git
+
+cd travelnest-ai
+```
+
+---
+
+## Backend Setup
 
 ```bash
 cd backend
+
 npm install
 
-# Edit .env file:
-# MONGO_URI=mongodb://localhost:27017/travelnest
-# JWT_SECRET=your_super_secret_key
-# GROQ_API_KEY=your_groq_api_key_here
-# PORT=5000
-
-# Seed the database
-npm run seed
-
-# Start backend
 npm run dev
 ```
 
-### 3. Frontend Setup
+---
+
+## Frontend Setup
 
 ```bash
 cd frontend
+
 npm install
 
-# Start frontend
 npm run dev
 ```
 
-### 4. Access the App
-- **Frontend**: http://localhost:5173
-- **Backend API**: http://localhost:5000/api
+---
+
+# 🔑 Environment Variables
+
+## Backend (.env)
+
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+GROQ_API_KEY=your_groq_api_key
+```
+
+## Frontend (.env)
+
+```env
+VITE_API_URL=https://travelnest-ai-backend-0z1j.onrender.com/api
+```
 
 ---
 
-## 🔑 Demo Credentials
-
-| Role | Email | Password |
-|---|---|---|
-| Admin | admin@travelnest.com | admin123 |
-| User | priya@example.com | password123 |
-
----
-
-## 🤖 AI Features (Groq)
-
-1. **Trip Planner** — Enter destination, budget, days → get full AI itinerary
-2. **AI Chat** — Ask anything about travel, destinations, visa, tips
-3. **Quick Prompts** — One-click popular trip templates
-
-> Get your free Groq API key at: https://console.groq.com
-
----
-
-## 🎯 Features
-
-### User Features
-- ✅ JWT Auth (Login/Signup)
-- ✅ Browse & filter tours
-- ✅ Tour detail with itinerary
-- ✅ Wishlist (save/remove)
-- ✅ Book tours (no payment required)
-- ✅ User dashboard with booking history
-- ✅ Reviews & ratings
-- ✅ AI trip planner (Groq)
-- ✅ AI travel chat
-- ✅ Dark mode
-- ✅ Fully responsive
-
-### Admin Features
-- ✅ Stats overview (users, tours, bookings, revenue)
-- ✅ Add/Edit/Delete tours
-- ✅ Manage all bookings (update status)
-- ✅ View/Delete users
-
----
-
-## 🌱 Seed Data Includes
-- 1 Admin user
-- 5 Normal users
-- 10 Tour packages (India + International)
-- Sample bookings
-
----
-
-## 📡 API Routes
+# 📡 API Endpoints
 
 | Method | Route | Description |
-|---|---|---|
-| POST | /api/auth/signup | Register user |
-| POST | /api/auth/login | Login |
-| GET | /api/auth/me | Get current user |
-| GET | /api/tours | List tours (with filters) |
-| GET | /api/tours/featured | Featured tours |
-| GET | /api/tours/:id | Tour detail |
-| POST | /api/tours | Create tour (admin) |
-| PUT | /api/tours/:id | Update tour (admin) |
-| DELETE | /api/tours/:id | Delete tour (admin) |
-| POST | /api/bookings | Book a tour |
-| GET | /api/bookings/my | My bookings |
-| DELETE | /api/bookings/:id | Cancel booking |
-| GET | /api/wishlist | Get wishlist |
-| POST | /api/wishlist/toggle | Toggle wishlist |
-| GET | /api/reviews/:tourId | Tour reviews |
-| POST | /api/reviews | Add review |
-| GET | /api/admin/stats | Admin stats |
-| GET | /api/admin/users | All users |
-| DELETE | /api/admin/users/:id | Delete user |
-| GET | /api/admin/bookings | All bookings |
-| PUT | /api/admin/bookings/:id | Update booking status |
-| POST | /api/ai/travel | Generate itinerary |
-| POST | /api/ai/chat | AI chat response |
+|---------|-------|-------------|
+| POST | /api/auth/signup | Register User |
+| POST | /api/auth/login | Login User |
+| GET | /api/auth/me | Current User |
+| GET | /api/tours | Get Tours |
+| GET | /api/tours/:id | Tour Details |
+| POST | /api/bookings | Book Tour |
+| GET | /api/bookings/my | My Bookings |
+| GET | /api/wishlist | Wishlist |
+| POST | /api/wishlist/toggle | Toggle Wishlist |
+| POST | /api/reviews | Add Review |
+| GET | /api/admin/stats | Admin Stats |
+| POST | /api/ai/travel | AI Trip Planner |
+| POST | /api/ai/chat | AI Travel Chat |
+
+---
+
+# 🤖 AI Features
+
+- ✨ AI Trip Planner
+- 💬 AI Travel Chat
+- 📍 Personalized Itinerary
+- 💰 Budget-Based Recommendations
+
+---
+
+# 🚀 Deployment
+
+| Service | Platform |
+|----------|----------|
+| Frontend | Vercel |
+| Backend | Render |
+| Database | MongoDB Atlas |
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+![Home](screenshots/home.png)
+
+---
+
+## 🔐 Login Page
+
+![Login](screenshots/login.png)
+
+---
+
+## 📝 Signup Page
+
+![Signup](screenshots/signup.png)
+
+---
+
+## 🌍 Tours Page
+
+![Tours](screenshots/tours.png)
+
+---
+
+## 📅 Booking Page
+
+![Booking](screenshots/booking.png)
+
+---
+
+## 👤 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## 🤖 AI Planner
+
+![AI Planner](screenshots/ai-planner.png)
+
+---
+
+# 👨‍💻 Author
+
+**Rohit Kumar**
+
+GitHub: https://github.com/Rohitkumar968
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
