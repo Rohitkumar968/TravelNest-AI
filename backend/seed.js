@@ -290,61 +290,8 @@ const tours = [
     featured: true,
     rating: 5.0,
     numReviews: 31
-  }
-  {
-  title: "Goa Beach Escape",
-  location: "Goa",
-  country: "India",
-  price: 8999,
-  duration: 4,
-  description: "Experience the beautiful beaches, nightlife and water sports of Goa.",
-  images: [
-    "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2"
-  ],
-  highlights: ["Baga Beach", "Calangute", "Water Sports", "Nightlife"],
-  itinerary: [
-    { day: 1, title: "Arrival", description: "Check-in and relax." },
-    { day: 2, title: "Beach Tour", description: "Visit famous beaches." },
-    { day: 3, title: "Adventure", description: "Water sports and shopping." },
-    { day: 4, title: "Departure", description: "Checkout and return." }
-  ],
-  included: ["Hotel", "Breakfast", "Sightseeing"],
-  excluded: ["Flights", "Personal Expenses"],
-  maxGroupSize: 20,
-  difficulty: "easy",
-  category: "beach",
-  featured: true,
-  rating: 4.8,
-  numReviews: 210
-},
-
-{
-  title: "Manali Adventure",
-  location: "Manali",
-  country: "India",
-  price: 12999,
-  duration: 5,
-  description: "Snow adventure, Solang Valley and mountain views.",
-  images: [
-    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23"
-  ],
-  highlights: ["Solang Valley", "Rohtang Pass", "River Rafting"],
-  itinerary: [
-    { day: 1, title: "Arrival", description: "Hotel check-in." },
-    { day: 2, title: "Solang Valley", description: "Adventure activities." },
-    { day: 3, title: "Rohtang Pass", description: "Snow sightseeing." },
-    { day: 4, title: "Local Tour", description: "Temples and markets." },
-    { day: 5, title: "Departure", description: "Return journey." }
-  ],
-  included: ["Hotel", "Breakfast", "Transport"],
-  excluded: ["Lunch", "Shopping"],
-  maxGroupSize: 15,
-  difficulty: "moderate",
-  category: "mountain",
-  featured: true,
-  rating: 4.9,
-  numReviews: 175
-},
+  },
+ 
 
 {
   title: "Jaipur Heritage Tour",
@@ -372,33 +319,6 @@ const tours = [
   numReviews: 120
 },
 
-{
-  title: "Kerala Backwaters",
-  location: "Alleppey",
-  country: "India",
-  price: 14999,
-  duration: 5,
-  description: "Enjoy luxury houseboat stay in Kerala backwaters.",
-  images: [
-    "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944"
-  ],
-  highlights: ["Houseboat", "Backwaters", "Village Tour"],
-  itinerary: [
-    { day: 1, title: "Arrival", description: "Hotel check-in." },
-    { day: 2, title: "Houseboat", description: "Backwater cruise." },
-    { day: 3, title: "Village Tour", description: "Explore local culture." },
-    { day: 4, title: "Beach Visit", description: "Relax by the beach." },
-    { day: 5, title: "Departure", description: "Return." }
-  ],
-  included: ["Hotel", "Breakfast", "Houseboat"],
-  excluded: ["Flights"],
-  maxGroupSize: 18,
-  difficulty: "easy",
-  category: "beach",
-  featured: true,
-  rating: 4.9,
-  numReviews: 198
-},
 
 {
   title: "Ladakh Bike Expedition",
@@ -428,7 +348,116 @@ const tours = [
   featured: true,
   rating: 5,
   numReviews: 265
-}
+},
+{
+  title: "Kashmir Paradise",
+  location: "Srinagar, Gulmarg & Pahalgam",
+  country: "India",
+  price: 19999,
+  duration: 6,
+  description: "Explore the breathtaking beauty of Kashmir with Dal Lake, Gulmarg and Pahalgam.",
+  images: [
+    "https://images.unsplash.com/photo-1598091383021-15ddea10925d?w=800"
+  ],
+  highlights: ["Dal Lake", "Shikara Ride", "Gulmarg Gondola", "Pahalgam Valley"],
+  itinerary: [],
+  included: ["Hotel", "Breakfast", "Transport"],
+  excluded: ["Flights", "Personal Expenses"],
+  maxGroupSize: 18,
+  difficulty: "easy",
+  category: "mountain",
+  featured: true,
+  rating: 4.9,
+  numReviews: 155
+},
+
+{
+  title: "Andaman Island Tour",
+  location: "Port Blair & Havelock",
+  country: "India",
+  price: 28999,
+  duration: 6,
+  description: "Enjoy crystal-clear beaches, scuba diving and island hopping in Andaman.",
+  images: [
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+  ],
+  highlights: ["Radhanagar Beach", "Scuba Diving", "Cellular Jail", "Snorkeling"],
+  itinerary: [],
+  included: ["Hotel", "Breakfast", "Ferry"],
+  excluded: ["Flights"],
+  maxGroupSize: 16,
+  difficulty: "easy",
+  category: "beach",
+  featured: true,
+  rating: 4.8,
+  numReviews: 142
+},
+
+{
+  title: "Vietnam Explorer",
+  location: "Hanoi & Ha Long Bay",
+  country: "Vietnam",
+  price: 42999,
+  duration: 7,
+  description: "Discover Vietnam's culture, street food and the world-famous Ha Long Bay.",
+  images: [
+    "https://images.unsplash.com/photo-1528127269322-539801943592?w=800"
+  ],
+  highlights: ["Ha Long Bay Cruise", "Old Quarter", "Street Food", "Limestone Caves"],
+  itinerary: [],
+  included: ["Hotel", "Breakfast", "Cruise"],
+  excluded: ["Flights"],
+  maxGroupSize: 20,
+  difficulty: "easy",
+  category: "cultural",
+  featured: true,
+  rating: 4.9,
+  numReviews: 118
+},
+
+{
+  title: "Singapore City Escape",
+  location: "Singapore",
+  country: "Singapore",
+  price: 55999,
+  duration: 5,
+  description: "Explore Marina Bay Sands, Sentosa Island and Gardens by the Bay.",
+  images: [
+    "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800"
+  ],
+  highlights: ["Marina Bay Sands", "Sentosa", "Universal Studios", "Gardens by the Bay"],
+  itinerary: [],
+  included: ["Hotel", "Breakfast", "City Tour"],
+  excluded: ["Flights"],
+  maxGroupSize: 20,
+  difficulty: "easy",
+  category: "city",
+  featured: true,
+  rating: 4.8,
+  numReviews: 167
+},
+
+{
+  title: "Maldives Luxury Retreat",
+  location: "Male & Private Resort",
+  country: "Maldives",
+  price: 89999,
+  duration: 5,
+  description: "Stay in a luxury overwater villa with crystal-clear lagoons and private beaches.",
+  images: [
+    "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800"
+  ],
+  highlights: ["Overwater Villa", "Private Beach", "Snorkeling", "Sunset Cruise"],
+  itinerary: [],
+  included: ["Luxury Resort", "Breakfast & Dinner", "Airport Transfer"],
+  excluded: ["Flights", "Personal Expenses"],
+  maxGroupSize: 10,
+  difficulty: "easy",
+  category: "beach",
+  featured: true,
+  rating: 5.0,
+  numReviews: 230
+},
 ];
 
 const seedDB = async () => {
