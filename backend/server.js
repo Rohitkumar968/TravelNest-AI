@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const path = require('path');
+const seedRoute = require("./routes/seed");
 
 dotenv.config();
 console.log('MongoDB URI =', process.env.MONGODB_URI);
@@ -29,6 +30,7 @@ app.use('/api/bookings', require('./routes/bookings'));
 app.use('/api/wishlist', require('./routes/wishlist'));
 app.use('/api/admin', require('./routes/admin'));
 app.use('/api/ai', require('./routes/ai'));
+app.use('/api/seed', seedRoute);
 app.use('/api/reviews', require('./routes/reviews'));
 
 // Health check
