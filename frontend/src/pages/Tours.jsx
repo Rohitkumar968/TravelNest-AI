@@ -38,10 +38,13 @@ export default function Tours() {
       params.limit = 9
 
       const res = await api.get('/tours', { params })
+      console.log("API Response:", res.data); // Log the response data for debugging
       setTours(res.data.tours)
       setTotal(res.data.total)
       setPages(res.data.pages)
-    } catch { } finally {
+    } catch (error) {
+      console.error("Error fetching tours:", error)
+    } finally {
       setLoading(false)
     }
   }, [filters])
